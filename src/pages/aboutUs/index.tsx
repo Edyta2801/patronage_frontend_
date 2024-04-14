@@ -1,4 +1,4 @@
-import About from "../../components/About";
+import AboutUs from "../../components/AboutUs";
 
 function AboutPage() {
   return (
@@ -6,7 +6,7 @@ function AboutPage() {
       <h2>
         Home <span className="location"> {">"} About</span>
       </h2>
-      <About/>
+      <AboutUs />
     </section>
   );
 }

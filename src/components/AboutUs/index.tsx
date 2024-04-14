@@ -26,7 +26,7 @@ const StyledImage = styled('img')(() => ({
     objectFit: 'cover'
 }));
 
-function About(props: any) {
+function AboutUs(props: any) {
     return (
         <Box sx={{ marginTop: 10, flexGrow: 1 }}>
             <Grid container spacing={2}>
@@ -56,4 +56,4 @@ function About(props: any) {
     );
 }
 
-export default About;
+export default AboutUs;
