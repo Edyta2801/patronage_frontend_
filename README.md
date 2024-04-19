@@ -1,4 +1,4 @@
-# patronage22_lublin_js_frontend _in progress_
+# patronage22_lublin_js_frontend
 > E-commerce application 
 
 ## Table of Contents
