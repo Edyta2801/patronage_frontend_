@@ -12,7 +12,7 @@ import { styled } from "@mui/material/styles";
 import TableCell from "@mui/material/TableCell";
 import { Button } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-
+import { CONSTANTS } from "../../types/constants";
 
 const SmallImage = styled("img")(({ theme }) => ({
   width: "100px",
@@ -42,14 +42,19 @@ function CartItem(props: ProductItemProps) {
   function showDetailsHandler() {
     router.push("/products/" + id);
   }
- 
+
   return (
     <>
       <TableCell component="th" scope="row">
         <Button onClick={showDetailsHandler}>
-          <SmallImage src={photos || "https://advancepetproduct.com/wp-content/uploads/2019/04/no-image-750x479.png"}
-          alt='' 
-           ></SmallImage>
+          <SmallImage
+            // src={
+            //   photos ||
+            //   "https://advancepetproduct.com/wp-content/uploads/2019/04/no-image-750x479.png"
+            // }
+            src={`${CONSTANTS.URL}/${photos}`}
+            alt=""
+          ></SmallImage>
         </Button>
       </TableCell>
       <TableCell>
