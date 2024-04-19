@@ -74,7 +74,7 @@ const MainNavigation = () => {
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
           >
             <WhatshotIcon sx={{ fontSize: 50, color: "#FFFFFF" }} />
-            <Typography variant="subtitle2" color="#FFFFFF" lineHeight={1}>
+            <Typography variant="subtitle2" color="#FFFFFF" marginTop={"-10px"}>
               e-shop
             </Typography>
           </Typography>
@@ -128,7 +128,11 @@ const MainNavigation = () => {
               sx={{ mr: 2, display: { xs: "block", md: "none" } }}
             >
               <WhatshotIcon sx={{ fontSize: 50, color: "#FFFFFF" }} />
-              <Typography variant="subtitle2" color="#FFFFFF" lineHeight={1}>
+              <Typography
+                variant="subtitle2"
+                color="#FFFFFF"
+                marginTop={"-10px"}
+              >
                 e-shop
               </Typography>
             </Typography>
