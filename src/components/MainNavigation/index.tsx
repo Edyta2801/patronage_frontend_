@@ -63,7 +63,6 @@ const MainNavigation = () => {
     setAnchorElUser(null);
   };
 
-
   return (
     <AppBar position="static" className="app-bar">
       <Container maxWidth="lg" sx={{ mt: 3 }}>
@@ -74,8 +73,8 @@ const MainNavigation = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
           >
-            <WhatshotIcon sx={{ fontSize: 50, color: "#0057D8" }} />
-            <Typography variant="subtitle2" color="#0057D8" lineHeight={1}>
+            <WhatshotIcon sx={{ fontSize: 50, color: "#FFFFFF" }} />
+            <Typography variant="subtitle2" color="#FFFFFF" lineHeight={1}>
               e-shop
             </Typography>
           </Typography>
@@ -128,8 +127,8 @@ const MainNavigation = () => {
               component="div"
               sx={{ mr: 2, display: { xs: "block", md: "none" } }}
             >
-              <WhatshotIcon sx={{ fontSize: 50, color: "#0057D8" }} />
-              <Typography variant="subtitle2" color="#0057D8" lineHeight={1}>
+              <WhatshotIcon sx={{ fontSize: 50, color: "#FFFFFF" }} />
+              <Typography variant="subtitle2" color="#FFFFFF" lineHeight={1}>
                 e-shop
               </Typography>
             </Typography>
@@ -175,8 +174,14 @@ const MainNavigation = () => {
                 onClick={handleOpenUserMenu}
                 sx={{ size: "medium", p: 0, ml: 2 }}
               >
-                <Avatar src="/broken-image.jpg"
-                  sx={{ color: 'white', bgcolor: '#0056ad', width: 24, height: 24 }}
+                <Avatar
+                  src="/broken-image.jpg"
+                  sx={{
+                    color: "white",
+                    bgcolor: "#0056ad",
+                    width: 24,
+                    height: 24,
+                  }}
                 />
               </IconButton>
               <Menu
@@ -198,10 +203,10 @@ const MainNavigation = () => {
                 {settings.map((setting) => (
                   <MenuItem key={setting} onClick={handleCloseUserMenu}>
                     <Typography textAlign="center">
-                    <Link href={`/${setting.toLocaleLowerCase()}`}>
-                    <div className="nav-link">{setting}</div>
+                      <Link href={`/${setting.toLocaleLowerCase()}`}>
+                        <div className="nav-link">{setting}</div>
                       </Link>
-                      </Typography>
+                    </Typography>
                   </MenuItem>
                 ))}
                 <MenuItem
